@@ -15,11 +15,13 @@ def countlines(start, lines=0, header=True, begin_start=None):
                         newlines = f.readlines()
                         newlines = len(newlines)
                         lines += newlines
-
                         if begin_start is not None:
                             reldir_of_thing = "." + thing.replace(begin_start, "")
                         else:
                             reldir_of_thing = "." + thing.replace(start, "")
+
+                        reldir_of_thing = reldir_of_thing[:-2]
+                        reldir_of_thing += '.py'
 
                         print(
                             "{:>10} |{:>10} | {:<20}".format(
