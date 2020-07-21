@@ -1,0 +1,55 @@
+{% extends "base/base.html" %}
+{% load static %}
+{% block content %}
+{% for partner in partners %}
+    {% if partner.name == "We currently have no partners!" %}
+        <section class="about_us_area section_gap_top">
+        	<div class="container">
+        		<div class="row about_content align-items-center">
+        			<div class="col-lg-6">
+        				<div class="section_content">
+        					<b>{{ partner.name }}</b>
+                            <br> <br>
+        					<p>
+                                {{ partner.description|linebreaksbr }}
+                            </p>
+        					<a class="primary_btn" href="{{ partner.link }}" target="_blank">Learn More</a>
+        				</div>
+        			</div>
+        			<div class="col-lg-6">
+        				<div class="about_us_image_box justify-content-center w-75">
+        					<img class="img-fluid w-75" src="{{ partner.image.url }}" alt="">
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </section>
+
+        <hr>
+    {% else %}
+    <section class="about_us_area">
+        <div class="container">
+            <div class="row about_content align-items-center">
+                <div class="col-lg-6">
+                    <div class="section_content">
+                        <b>{{ partner.name }}</b>
+                        <br> <br>
+                        <p>
+                            {{ partner.description|linebreaksbr }}
+                        </p>
+                        <a class="primary_btn" href="{{ partner.link }}" target="_blank">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about_us_image_box justify-content-center w-75">
+                        <img class="img-fluid w-75" src="{{ partner.image.url }}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+    {% endif %}
+{% endfor %}
+{% endblock content %}

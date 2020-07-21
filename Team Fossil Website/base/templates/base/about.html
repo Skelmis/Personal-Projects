@@ -1,0 +1,70 @@
+{% extends "base/base.html" %}
+{% load static %}
+{% block content %}
+<br>
+<section class="about_us_area section_gap_top">
+	<div class="container">
+		<div class="row about_content align-items-center">
+			<div class="col-lg-6">
+				<div class="section_content">
+					<h6>About Us</h6>
+					<h1>We believe that gaming should be for everyone</h1>
+					<p>
+                        A mixed team of players from all ages with an average age
+                        above 35, we believe that gaming should be for everyone. <br>
+                        Ever felt excluded because of your age? We don't think thats fair,
+                        so we started our own thing because everyone deserves a group to play with.
+                    </p>
+					<a class="primary_btn" href="https://discord.gg/XbsKY6G" target="_blank">Learn More</a>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="about_us_image_box justify-content-center">
+					<img class="img-fluid w-75" src="{% static 'base/media/b_map1.png' %}" alt="" >
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<hr>
+
+<section class="testimonials_area section_gap">
+	<div class="container">
+		<div class="testi_slider owl-carousel">
+			<div class="testi_item">
+				<b>A tightknit group</b>
+				<div class="wow slideInLeft" data-wow-duration="30s" data-wow-delay="15s">
+					<p>
+                        Built on the idea of comradery and teamwork, we are always
+                        looking out for each other. <br>
+                        Whether thats ingame or just out and about, its all about
+                        respect and good times.
+					</p>
+				</div>
+			</div>
+			<div class="testi_item">
+				<b>Aussies & Kiwis</b>
+				<div class="wow slideInLeft" data-wow-duration="30s" data-wow-delay="15s">
+					<p>
+						Our members are currently all based in Aussie or New Zealand. <br>
+                        Now that doesnt mean we dont play on the potato servers that
+                        are Singapore but our main timezone is AEST.
+					</p>
+				</div>
+			</div>
+			<div class="testi_item">
+				<b>Gaming knows no bounds</b>
+				<div class="wow slideInLeft" data-wow-duration="30s" data-wow-delay="15s">
+					<p>
+						As someone more mature with more life experience, you
+                        may feel left out with all these young'uns and there groups. <br>
+                        Look no further, we are a bunch of mature folks who will
+                        welcome you with open arms.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock content %}

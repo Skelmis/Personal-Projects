@@ -1,0 +1,57 @@
+{% extends "base/base.html" %}
+{% load static %}
+{% block content %}
+{% for member in members %}
+    {% if member.ign == "Skelmis" %}
+        <section class="about_us_area section_gap_top">
+        	<div class="container">
+        		<div class="row about_content align-items-center">
+        			<div class="col-lg-6">
+        				<div class="section_content">
+        					<h6>{{ member.ign }}</h6>
+        					<h1>{{ member.quote }}</h1>
+        					<p>
+                                Main: <b>{{ member.character }}</b> <br>
+                                {{ member.content|linebreaksbr }}
+                            </p>
+        					<a class="primary_btn" href="https://discord.gg/XbsKY6G" target="_blank">Learn More</a>
+        				</div>
+        			</div>
+        			<div class="col-lg-6">
+        				<div class="about_us_image_box justify-content-center">
+        					<img class="img-fluid w-75" src="{{ member.profilePicture.url }}" alt="" >
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </section>
+
+        <hr>
+    {% else %}
+        <section class="about_us_area">
+            <div class="container">
+                <div class="row about_content align-items-center">
+                    <div class="col-lg-6">
+                        <div class="section_content">
+                            <h6>{{ member.ign }}</h6>
+                            <h1>{{ member.quote }}</h1>
+                            <p>
+                                Main: <b>{{ member.character }}</b> <br>
+                                {{ member.content|linebreaksbr }}
+                            </p>
+                            <a class="primary_btn" href="https://discord.gg/XbsKY6G" target="_blank">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about_us_image_box justify-content-center">
+                            <img class="img-fluid w-75" src="{{ member.profilePicture.url }}" alt="" >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+    {% endif %}
+{% endfor %}
+{% endblock content %}

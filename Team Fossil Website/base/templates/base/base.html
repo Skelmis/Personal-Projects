@@ -1,0 +1,116 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="{% static 'base/media/logos/favicon.png' %}" type="image/png">
+	<title>Team Fossil</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="{% static 'base/css/bootstrap.css' %}">
+	<link rel="stylesheet" href="{% static 'base/vendors/linericon/style.css' %}">
+	<link rel="stylesheet" href="{% static 'base/css/font-awesome.min.css' %}">
+	<link rel="stylesheet" href="{% static 'base/vendors/owl-carousel/owl.carousel.min.css' %}">
+	<link rel="stylesheet" href="{% static 'base/css/magnific-popup.css' %}">
+	<link rel="stylesheet" href="{% static 'base/vendors/nice-select/css/nice-select.css' %}">
+	<link rel="stylesheet" href="{% static 'base/vendors/animate-css/animate.css' %}">
+	<link rel="stylesheet" href="{% static 'base/vendors/flaticon/flaticon.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+	<!-- main css -->
+	<link rel="stylesheet" href="{% static 'base/css/style.css' %}">
+</head>
+
+
+<body>
+
+	<!--================Header Menu Area =================-->
+	<header class="header_area">
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<a class="navbar-brand logo_h" href="#"><img src="{% static 'base/media/logos/logo.png' %}" alt="" height="100"></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<ul class="nav navbar-nav menu_nav justify-content-center">
+							<li class="nav-item"><a class="nav-link" href="{% url 'base-home' %}"><p style="font-size:20px">Home</p></a></li>
+							<li class="nav-item"><a class="nav-link" href="{% url 'base-about' %}"><p style="font-size:20px">About</p></a></li>
+							<li class="nav-item"><a class="nav-link" href="{% url 'base-team' %}"><p style="font-size:20px">Team</p></a>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'base-partners' %}"><p style="font-size:20px">Partners</p></a>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'base-contact' %}"><p style="font-size:20px">Contact</p></a></li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li class="nav-item"><a href="https://discord.gg/XbsKY6G" target="_blank" class="primary_btn">join us</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!--================Header Menu Area =================-->
+
+    <!-- Begin actual content area here -->
+    {% if messages %}
+    {% for message in messages %}
+      <div class="alert alert-{{ message.tags }}">
+        {{ message }}
+      </div>
+    {% endfor %}
+    {% endif %}
+    {% block content %}{% endblock %}
+    <!-- End extendy bois -->
+
+	<!--================Footer Area =================-->
+	<footer class="footer_area section_gap_top">
+		<div class="container">
+			<div class="row single-footer-widget">
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<div class="copy_right_text">
+						<p>
+                            Copyright Skelmis 2020
+                        </p>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<div class="social_widget">
+						<a href="https://www.facebook.com/Mr-Young-Beard-100128508393644" target="_blank"><i class="fa fa-facebook"></i></a>
+						<a href="https://discord.gg/XbsKY6G" target="_blank"><i class="fa fa-discord" aria-hidden="true"></i></a>
+                        <a href="https://www.twitch.tv/unserializable" target="_blank"><i class="fa fa-twitch"></i></a>
+						<a href="https://www.youtube.com/channel/UC8D3eBF-zTdBMbegMS3X3xQ" target="_blank"><i class="fa fa-youtube"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--================End Footer Area =================-->
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="{% static 'base/js/jquery-3.2.1.min.js' %}"></script>
+	<script src="{% static 'base/js/popper.js' %}"></script>
+	<script src="{% static 'base/js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'base/js/stellar.js' %}"></script>
+	<script src="{% static 'base/js/jquery.magnific-popup.min.js' %}"></script>
+	<script src="{% static 'base/vendors/nice-select/js/jquery.nice-select.min.js' %}"></script>
+	<script src="{% static 'base/vendors/isotope/imagesloaded.pkgd.min.js' %}"></script>
+	<script src="{% static 'base/vendors/isotope/isotope-min.js' %}"></script>
+	<script src="{% static 'base/vendors/owl-carousel/owl.carousel.min.js' %}"></script>
+	<script src="{% static 'base/js/jquery.ajaxchimp.min.js' %}"></script>
+	<script src="{% static 'base/vendors/counter-up/jquery.waypoints.min.js' %}"></script>
+	<script src="{% static 'base/vendors/counter-up/jquery.counterup.min.js' %}"></script>
+	<script src="{% static 'base/js/mail-script.js' %}"></script>
+	<!--gmaps Js-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+	<script src="{% static 'base/js/gmaps.min.js' %}"></script>
+	<script src="{% static 'base/js/theme.js' %}"></script>
+</body>
+
+</html>

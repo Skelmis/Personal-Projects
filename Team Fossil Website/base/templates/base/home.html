@@ -1,0 +1,39 @@
+{% extends "base/base.html" %}
+{% load static %}
+{% block content %}
+<section class="home_banner_area">
+    <div class="banner_inner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="home_left_img">
+                        <img class="img-fluid" src="{% static 'base/media/banner/home-left.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="banner_content">
+                        <h2>
+                            With an average age old enough to be your parents, <br>
+                            we still succeed.
+                        </h2>
+                        <p>
+                            Featuring some of the most mediocore players in the game, yet somehow managing
+                            to be within the top 20% of players worldwide is a feat within itself.
+                            But, add an average age of over 35 and then its simply showing off! <br>
+                            Anyway, welcome to <b>Team Fossil</b>. Where age isn't a barrier, its an advantage.
+                        </p>
+                        <div class="d-flex align-items-center">
+                            <a id="play-home-video" class="video-play-button" href="https://www.youtube.com/watch?v=Je8XxgMGMuA">
+                                <span></span>
+                            </a>
+                            <div class="watch_video text-uppercase">
+                                We do weird things, see here!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}
