@@ -3,6 +3,7 @@ A bunch of my personal Python projects!
 
 Each folder will represent something else, and all will contain cool readmes about them!
 Also, for more significant projects. They will have there own repo, these are marked in the readme below and can be found as such.
+*Projects are sorted alphabetically*
 
 ---
 
@@ -10,6 +11,7 @@ Also, for more significant projects. They will have there own repo, these are ma
 
 - [Apex Legends Monitor](#apex-legends-monitor)
 - [Discord.py Ticket Bot](#discord-ticket-bot) - External Repo
+- [PyMcBot](#pymcbot) - External Repo
 - [Team Fossil Website](#team-fossil-website)
 - [License](#license)
 
@@ -27,6 +29,12 @@ A fully featured ticket bot coded using Discord.py
 This bot features, logging of ticket contents & support for reactions as well as creating tickets via the standard command line.
 
 **Find the project [here!](https://github.com/Skelmis/DPY-Ticket-Bot)**
+
+---
+## PyMcBot
+A discord bot built using `Discord.py` with the sole purpose of interacting with a MineCraft server from a client point of view, without the need to create an actual plugin.
+
+**Find the project [here!](https://github.com/Skelmis/PyMcBot)**
 
 ---
 
