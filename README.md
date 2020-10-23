@@ -14,6 +14,7 @@ Also, for more significant projects. They will have there own repo, these are ma
 # Table Of Contents
 
 - [Apex Legends Monitor](#apex-legends-monitor)
+- [Discord.py Anti-Spam](#discord-anti-spam) - External Repo
 - [Discord.py Ticket Bot](#discord-ticket-bot) - External Repo
 - [PyMcBot](#pymcbot) - External Repo
 - [Team Fossil Website](#team-fossil-website)
@@ -28,11 +29,18 @@ A cool project devoted to teaching myself `pyautogui` and automating aspects of 
 
 ---
 
+## Discord Anti Spam
+An under development package for Discord.Py developers to use as an anti-spam feature suite in there bots.
+
+**Find the project [here!](https://github.com/Skelmis/DPY-Ticket-Bot)**
+
+---
+
 ## Discord Ticket Bot
 A fully featured ticket bot coded using Discord.py
 This bot features, logging of ticket contents & support for reactions as well as creating tickets via the standard command line.
 
-**Find the project [here!](https://github.com/Skelmis/DPY-Ticket-Bot)**
+**Find the project [here!](https://github.com/Skelmis/DPY-Anti-Spam)**
 
 ---
 ## PyMcBot
