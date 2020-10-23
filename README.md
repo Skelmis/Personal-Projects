@@ -1,5 +1,9 @@
 # Personal-Projects
-A bunch of my personal Python projects!
+A bunch of my personal projects! 
+
+Languages:
+- Python
+- C#
 
 Each folder will represent something else, and all will contain cool readmes about them!
 Also, for more significant projects. They will have there own repo, these are marked in the readme below and can be found as such.
