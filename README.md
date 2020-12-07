@@ -1,5 +1,5 @@
-# Personal-Projects
-A bunch of my personal projects! 
+# Portfolio
+A bunch of my personal projects! This is can be seen as a portfolio of nearly everything open-source I have personally done.
 
 Languages:
 - Python
