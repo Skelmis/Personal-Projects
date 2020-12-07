@@ -10,7 +10,7 @@ Also, for more significant projects. They will have there own repo, these are ma
 
 *Projects are sorted alphabetically*
 
-*If your here as a 'portfolio' type of viewing,* [this](https://github.com/Skelmis/DPY-Anti-Spam)* can be considered my 'go to' piece of open source code.*
+*If your here as a 'portfolio' type of viewing,* [this](https://github.com/Skelmis/DPY-Anti-Spam) *can be considered my 'go to' piece of open source code.*
 
 ---
 
