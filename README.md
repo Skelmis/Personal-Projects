@@ -2,7 +2,8 @@
 A bunch of my personal projects! This is can be seen as a portfolio of nearly everything open-source I have personally done.
 
 Languages:
-- Python
+- Python, primarily 
+- Java, both Desktop & Android
 - C#
 
 Each folder will represent something else, and all will contain cool readmes about them!
