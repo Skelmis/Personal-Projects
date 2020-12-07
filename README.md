@@ -11,6 +11,19 @@ Also, for more significant projects. They will have there own repo, these are ma
 
 ---
 
+# Websites
+I have created a few sites, not all of them open source. Here are the relevant links:
+
+- [My Site](https://koldfusion.xyz/)
+- [StudySupport's Site](https://studysupport.club/)
+- [Team Fossil's Site](https://teamfossil.xyz/)
+
+All of my sites start life as templates, since lets be honest, your wasting time for no reason. After that, I completely overhaul everything in order to turn them from staticly linked html files into full dynamic sites.
+Generally speaking, this involves taking the static files, templating them ([see here](https://docs.djangoproject.com/en/3.1/topics/templates/)) and then building my [Django](https://www.djangoproject.com/) site around them before hosting them on either my mail server or other more generalised server that caters to dynamic sites.
+
+All dynamic sites are hosted through a few layers, the foremost being [Nginx](https://www.nginx.com/) as a reverse proxy to deal with incoming connections and also force https redirects if required. Next up is a [uwsgi](https://uwsgi-docs.readthedocs.io/en/latest/index.html) which talks to the [Django](https://www.djangoproject.com/) site. Everything has valid ssl certs & forced redirects to https for what should be obvious reasons
+
+
 # Table Of Contents
 
 - [Apex Legends Monitor](#apex-legends-monitor)
