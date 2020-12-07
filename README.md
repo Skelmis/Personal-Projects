@@ -9,6 +9,7 @@ Each folder will represent something else, and all will contain cool readmes abo
 Also, for more significant projects. They will have there own repo, these are marked in the readme below and can be found as such.
 
 *Projects are sorted alphabetically*
+
 *If your here as a 'portfolio' type of viewing,* [this](https://github.com/Skelmis/DPY-Anti-Spam)* can be considered my 'go to' piece of open source code.*
 
 ---
