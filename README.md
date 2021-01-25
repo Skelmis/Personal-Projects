@@ -51,7 +51,7 @@ A cool project devoted to teaching myself `pyautogui` and automating aspects of 
 An under development package for Discord.py developers to use as an anti-spam feature suite in there bots.
 
 
-**Find the project [here!](https://github.com/Skelmis/DPY-Ticket-Bot)**
+**Find the project [here!](https://github.com/Skelmis/discord-anti-spam)**
 
 ---
 
